@@ -70,9 +70,9 @@
 
                 <div class="language-switcher" onclick="toggleLanguage()">
                     <span class="flag-icon"></span>
-                    <span class="lang-text">FR</span>
+                    <span class="lang-text"></span>
                 </div>
-                </div>
+            
             </div>
         </div>
     </nav>
@@ -230,10 +230,10 @@
     const langText = languageSwitcher.querySelector('.lang-text');
     
     if (newLang === 'en') {
-        flagIcon.textContent = '🇬🇧';
+        flagIcon.textContent = '🇫🇷';
         langText.textContent = 'FR';
     } else {
-        flagIcon.textContent = '🇫🇷';
+        flagIcon.textContent = '🇬🇧';
         langText.textContent = 'EN';
     }
 
@@ -255,4 +255,4 @@
         window.onload = initLanguage;
      </script>
 </body>
-</html>
+              </html>
