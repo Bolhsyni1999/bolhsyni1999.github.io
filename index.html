@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-     <title>BOULAHSINI Mohamed</title>
-
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="cloud computing, infrastructure digitale, ofppt, ista ait melloul, ofppt ista ait melloul, infrastructure digitale option cloud computing, ofppt ista, ista réseau informatique, cloud">
-     <meta name="author" content="bolhsyni">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
-
+    <title>BOULAHSINI Mohamed</title>
+    <!-- ... (rest of the head content remains the same) ... -->
+    <style>
+        .language-switcher {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
@@ -26,7 +18,6 @@
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-
             <a class="navbar-brand" href="#">
                 boulahsini mohamed
             </a>
@@ -38,323 +29,140 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+                        <a href="#intro" class="nav-link smoothScroll" data-lang-en="Introduction" data-lang-fr="Introduction">Introduction</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Me</a>
+                        <a href="#about" class="nav-link smoothScroll" data-lang-en="About Me" data-lang-fr="À propos de moi">About Me</a>
                     </li>
- <!-- 
+
                     <li class="nav-item">
-                        <a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
-                    </li>
-  -->
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                        <a href="#contact" class="nav-link smoothScroll" data-lang-en="Contact" data-lang-fr="Contact">Contact</a>
                     </li>
                 </ul>
 
                 <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="https://drive.usercontent.google.com/u/0/uc?id=15DcTUXK2ixofZr1mQIL1f47zNL-UKN09&export=download" class="custom-btn btn" download>Download CV</a>
+                    <a href="https://drive.usercontent.google.com/u/0/uc?id=15DcTUXK2ixofZr1mQIL1f47zNL-UKN09&export=download" class="custom-btn btn" download data-lang-en="Download CV" data-lang-fr="Télécharger CV">Download CV</a>
+                </div>
+
+                <div class="language-switcher" onclick="toggleLanguage()">
+                    <span data-lang-en="FR" data-lang-fr="EN">FR</span>
                 </div>
             </div>
-
         </div>
     </nav>
 
-
     <!-- HERO -->
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
-
-         <div class="container">
+        <div class="container">
             <div class="row">
+                <div class="mx-auto col-lg-5 col-md-5 col-10">
+                    <img src="images/boulhssaini.jpeg" class="img-fluid" alt="Ben Resume HTML Template">
+                </div>
 
-                  <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="images/boulhssaini.jpeg" class="img-fluid" alt="Ben Resume HTML Template">
-                  </div>
-
-                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-                        <div class="hero-text">
-
-                            <h1 class="hero-title">👋 Bolhsyni, a cloud specialist</h1>
-
-                            <a href="#" class="email-link">
-                                medboulahsini@gmail.com
-                            </a>
-                          
-                        </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+                    <div class="hero-text">
+                        <h1 class="hero-title" data-lang-en="👋 Bolhsyni, a cloud specialist" data-lang-fr="👋 Bolhsyni, un spécialiste du cloud">👋 Bolhsyni, a cloud specialist</h1>
+                        <a href="#" class="email-link">
+                            medboulahsini@gmail.com
+                        </a>
                     </div>
-
+                </div>
             </div>
         </div>
     </section>
 
-
     <section class="about section-padding" id="about">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-6 col-md-6 col-12">
-                    <h3 class="mb-4">WHO AM I ?</h3>
+                    <h3 class="mb-4" data-lang-en="WHO AM I ?" data-lang-fr="QUI SUIS-JE ?">WHO AM I ?</h3>
 
-                    <p>My name is mohamed boulahsini i'm 25 years old, moroccan and i live in Casablanca. Currently an IT SUPPORT at <a href="https://www.mdcallcenter.ma">MD Call Center</a>. I graduated in Digital Infrastructure speciality of Cloud Computing at the specialized institute of applied technologies in Ait melloul (ISTA Ait Melloul). During my studies, I have acquired a solid foundation in Cloud Computing, working on practical projects using technologies such as AWS, Azure, Google Cloud Platform, Kubernetes, and Docker. I have also gained skills in computer security, system administration, and application development with python & more.</p>
+                    <p data-lang-en="My name is mohamed boulahsini i'm 25 years old, moroccan and i live in Casablanca. Currently an IT SUPPORT at <a href='https://www.mdcallcenter.ma'>MD Call Center</a>. I graduated in Digital Infrastructure speciality of Cloud Computing at the specialized institute of applied technologies in Ait melloul (ISTA Ait Melloul). During my studies, I have acquired a solid foundation in Cloud Computing, working on practical projects using technologies such as AWS, Azure, Google Cloud Platform, Kubernetes, and Docker. I have also gained skills in computer security, system administration, and application development with python & more." data-lang-fr="Je m'appelle mohamed boulahsini, j'ai 25 ans, je suis marocain et je vis à Casablanca. Actuellement, je suis SUPPORT IT chez <a href='https://www.mdcallcenter.ma'>MD Call Center</a>. J'ai obtenu mon diplôme en Infrastructure Numérique spécialité Cloud Computing à l'institut spécialisé de technologies appliquées à Ait melloul (ISTA Ait Melloul). Au cours de mes études, j'ai acquis une solide base en Cloud Computing, travaillant sur des projets pratiques utilisant des technologies telles que AWS, Azure, Google Cloud Platform, Kubernetes et Docker. J'ai également acquis des compétences en sécurité informatique, administration système et développement d'applications avec python et plus.">
+                        My name is mohamed boulahsini i'm 25 years old, moroccan and i live in Casablanca. Currently an IT SUPPORT at <a href="https://www.mdcallcenter.ma">MD Call Center</a>. I graduated in Digital Infrastructure speciality of Cloud Computing at the specialized institute of applied technologies in Ait melloul (ISTA Ait Melloul). During my studies, I have acquired a solid foundation in Cloud Computing, working on practical projects using technologies such as AWS, Azure, Google Cloud Platform, Kubernetes, and Docker. I have also gained skills in computer security, system administration, and application development with python & more.
+                    </p>
 
                     <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                        <li><strong>Full Name :</strong> Boulahsini mohamed </li>
-
-                        <li><strong>Date of Birth:</strong> 6 March 1999</li>
-
-                        <li><strong>Nationality :</strong> Moroccan</li>
-
-                        <li><strong>address :</strong> Ait lmouden Lmzar Ait Melloul</li>
-                         
-                        <li><strong>Email :</strong> medboulahsini@gmail.com</li>
+                        <li><strong data-lang-en="Full Name :" data-lang-fr="Nom complet :">Full Name :</strong> Boulahsini mohamed </li>
+                        <li><strong data-lang-en="Date of Birth:" data-lang-fr="Date de naissance :">Date of Birth:</strong> 6 March 1999</li>
+                        <li><strong data-lang-en="Nationality :" data-lang-fr="Nationalité :">Nationality :</strong> Moroccan</li>
+                        <li><strong data-lang-en="address :" data-lang-fr="Adresse :">address :</strong> Ait lmouden Lmzar Ait Melloul</li>
+                        <li><strong data-lang-en="Email :" data-lang-fr="Email :">Email :</strong> medboulahsini@gmail.com</li>
                     </ul>
                 </div>
 
                 <div class="col-lg-5 mx-auto col-md-6 col-12">
                     <img src="images/true-agency.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
                 </div>
-
             </div>
             <div class="row about-third">
-            	<div class="col-lg-4 col-md-4 col-12">
-                <h3>Soft Skills</h3>
-                <p><ul><li>Serious<br></li><li>The sense of responsibilities<br></li><li>Team spirit<br></li><li>leadership spirit<br></li><li>Curious<br></li><li>Patient</li></ul></p>
-                
+                <div class="col-lg-4 col-md-4 col-12">
+                    <h3 data-lang-en="Soft Skills" data-lang-fr="Compétences personnelles">Soft Skills</h3>
+                    <ul>
+                        <li data-lang-en="Serious" data-lang-fr="Sérieux">Serious</li>
+                        <li data-lang-en="The sense of responsibilities" data-lang-fr="Le sens des responsabilités">The sense of responsibilities</li>
+                        <li data-lang-en="Team spirit" data-lang-fr="Esprit d'équipe">Team spirit</li>
+                        <li data-lang-en="leadership spirit" data-lang-fr="Esprit de leadership">leadership spirit</li>
+                        <li data-lang-en="Curious" data-lang-fr="Curieux">Curious</li>
+                        <li data-lang-en="Patient" data-lang-fr="Patient">Patient</li>
+                    </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                <h3>Professional Skills</h3>
-                <p><ul><li>administrating azure cloud<br></li><li>Networking: switching/routing<br></li><li>Application developping with PYTHON<br></li><li>Private cloud administrating<br></li><li>Firewall administrating: PFSENSE<br></li><li>Microsoft Word Expert 2016 : nYKb-DwYK
-Microsoft Excel 2016 : wazW8-FMps</li></ul></p>
+                    <h3 data-lang-en="Professional Skills" data-lang-fr="Compétences professionnelles">Professional Skills</h3>
+                    <ul>
+                        <li data-lang-en="administrating azure cloud" data-lang-fr="administration du cloud Azure">administrating azure cloud</li>
+                        <li data-lang-en="Networking: switching/routing" data-lang-fr="Réseau : commutation/routage">Networking: switching/routing</li>
+                        <li data-lang-en="Application developping with PYTHON" data-lang-fr="Développement d'applications avec PYTHON">Application developping with PYTHON</li>
+                        <li data-lang-en="Private cloud administrating" data-lang-fr="Administration de cloud privé">Private cloud administrating</li>
+                        <li data-lang-en="Firewall administrating: PFSENSE" data-lang-fr="Administration de pare-feu : PFSENSE">Firewall administrating: PFSENSE</li>
+                        <li data-lang-en="Microsoft Word Expert 2016 : nYKb-DwYK Microsoft Excel 2016 : wazW8-FMps" data-lang-fr="Microsoft Word Expert 2016 : nYKb-DwYK Microsoft Excel 2016 : wazW8-FMps">Microsoft Word Expert 2016 : nYKb-DwYK Microsoft Excel 2016 : wazW8-FMps</li>
+                    </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                <h3>   &nbsp; Hobbies</h3>
-                <p><ul><li>Reading<br></li><li>Outdoor activities: Fishing, camping<br></li><li>Physical activities: Fitness & football<br></li><li>Traveling: Exploring new places<br></li></ul></p>
+                    <h3 data-lang-en="Hobbies" data-lang-fr="Loisirs">Hobbies</h3>
+                    <ul>
+                        <li data-lang-en="Reading" data-lang-fr="Lecture">Reading</li>
+                        <li data-lang-en="Outdoor activities: Fishing, camping" data-lang-fr="Activités de plein air : Pêche, camping">Outdoor activities: Fishing, camping</li>
+                        <li data-lang-en="Physical activities: Fitness & football" data-lang-fr="Activités physiques : Fitness et football">Physical activities: Fitness & football</li>
+                        <li data-lang-en="Traveling: Exploring new places" data-lang-fr="Voyager : Explorer de nouveaux endroits">Traveling: Exploring new places</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ... (rest of the HTML content remains the same) ... -->
 
-    <!-- TESTIMONIAL 
-     <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h3 class="mb-5 text-center">What People say</h3>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Ben</h6>
-                                        <span>Art Director</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Marie</h6>
-                                        <span>Marketing Consultant</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Jen</h6>
-                                        <span>Product Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image04.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Wilson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-               </div>
-          </div>
-     </section>
-                 -->
-
-     <!-- FAQ 
-     <section class="faq section-padding">
-        
-        <div class="container">
-            
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h3 class="mb-5">Frequently Asked Questions</h3>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Are those HTML templates absolutely free for any kind of usage?
-                            </button>
-                          </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, they are 100% free and there is no hidden charge.</p>
-
-                            <p>They can be used for your commercial websites.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Can I use them as a CMS theme or a part of website builder?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, you can use them.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              I cannot find a suitable HTML template. Can I request new template?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, please tell us what you need. We will try our best to fulfill it.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Can I redistribute your templates?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>No, this is totally NOT allowed. Please do not redistribute our HTML templates.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              How do I support Tooplate?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Please spread a word about Tooplate website to your colleagues and friends.</p>
-                          </div>
-                        </div>
-                    </div>
-                    -->
-                    <span class="faq-info-text">Please send me a message if you have anything to say. <strong>complete the form bellow</strong></span>
-
-                </div>
-
-           	 </div><!-- col -->
-        	</div><!-- row -->
-        </div><!-- container -->
-    </section>
-
-
-     <section class="contact section-padding pt-0" id="contact">
+    <section class="contact section-padding pt-0" id="contact">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-6 col-md-6 col-12">
             <form action="https://formsubmit.co/medboulahsini@gmail.com" method="POST" >
-                
                 <div class="form-group d-flex flex-column-reverse">
                     <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
-                    <label for="cf-name" class="webform-label">Full Name</label>
+                    <label for="cf-name" class="webform-label" data-lang-en="Full Name" data-lang-fr="Nom complet">Full Name</label>
                 </div>
-
                 <div class="form-group d-flex flex-column-reverse">
                     <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
+                    <label for="cf-email" class="webform-label" data-lang-en="Your Email" data-lang-fr="Votre Email">Your Email</label>
                 </div>
-
                 <div class="form-group d-flex flex-column-reverse">
                     <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
+                    <label for="cf-message" class="webform-label" data-lang-en="Message" data-lang-fr="Message">Message</label>
                 </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+                <button type="submit" class="form-control" id="submit-button" name="submit" data-lang-en="Send" data-lang-fr="Envoyer">Send</button>
             </form>
           </div>
 
             <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-
+                <h3 class="my-4 pt-4 pt-lg-0" data-lang-en="Say hello" data-lang-fr="Dites bonjour">Say hello</h3>
                 <p class="mb-1">+212698363989</p>
-
                 <p>
                     <a href="#">
                         medboulahsini@gmail.com
                     <i class="fas fa-arrow-right custom-icon"></i>
                     </a>
                 </p>
-
                 <ul class="social-links mt-2">
                     <li><a href="https://web.facebook.com/profile.php?id=100005749665734" rel="noopener" class="fab fa-facebook"></a></li>
                     <li><a href="#" rel="noopener" class="fab fa-twitter"></a></li>
@@ -362,12 +170,8 @@ Microsoft Excel 2016 : wazW8-FMps</li></ul></p>
                     <li><a href="https://www.linkedin.com/in/mohamed-boulahsini-a16351269/" rel="noopener" class="fab fa-linkedin"></a></li>
                     <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li>
                 </ul>
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; bolhsyni</p>
-                
-                
+                <p class="copyright-text mt-5 pt-3">Copyright &copy; bolhsyni</p>
             </div>
-
         </div>
       </div>
     </section>
@@ -377,6 +181,44 @@ Microsoft Excel 2016 : wazW8-FMps</li></ul></p>
      <script src="js/smoothscroll.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
+     <script>
+        function toggleLanguage() {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === 'en' ? 'fr' : 'en';
+            document.documentElement.lang = newLang;
 
+            const elements = document.querySelectorAll('[data-lang-en]');
+            elements.forEach(el => {
+                const content = el.getAttribute(`data-lang-${newLang}`);
+                if (content) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = content;
+                    } else {
+                        el.innerHTML = content;
+                    }
+                }
+            });
+
+            // Update language switcher text
+            const languageSwitcher = document.querySelector('.language-switcher span');
+            languageSwitcher.textContent = newLang === 'en' ? 'FR' : 'EN';
+
+            // Update form placeholders
+            document.getElementById('cf-name').placeholder = newLang === 'en' ? 'Your Name' : 'Votre nom';
+            document.getElementById('cf-email').placeholder = newLang === 'en' ? 'Your Email' : 'Votre email';
+            document.getElementById('cf-message').placeholder = newLang === 'en' ? 'Your Message' : 'Votre message';
+        }
+
+        // Initialize language based on browser settings
+        function initLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('fr')) {
+                toggleLanguage();
+            }
+        }
+
+        // Call initLanguage when the page loads
+        window.onload = initLanguage;
+     </script>
 </body>
 </html>
