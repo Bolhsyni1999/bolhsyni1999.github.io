@@ -36,7 +36,8 @@
 }
 
 .flag-icon {
-    font-size: 1.5em;
+    width: 24px;
+    height: 16px;
     margin-right: 5px;
 }
     </style>
@@ -75,9 +76,25 @@
                 </div>
 
                 <div class="language-switcher" onclick="toggleLanguage()">
-                    <span class="flag-icon">🇬🇧</span>
-                    <span class="lang-text">En</span>
-                </div>
+    <svg class="flag-icon en-flag" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+        <!-- Blue background -->
+        <rect width="60" height="30" fill="#00247D"/>
+        <!-- White diagonal cross -->
+        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
+        <!-- Red diagonal cross -->
+        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#CF142B" strokeWidth="2"/>
+        <!-- White cross -->
+        <path d="M30,0 V30 M0,15 H60" stroke="#fff" strokeWidth="10"/>
+        <!-- Red cross -->
+        <path d="M30,0 V30 M0,15 H60" stroke="#CF142B" strokeWidth="6"/>
+    </svg>
+    <svg class="flag-icon fr-flag" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <rect width="20" height="30" x="0" fill="#002395"/>
+        <rect width="20" height="30" x="20" fill="#FFFFFF"/>
+        <rect width="20" height="30" x="40" fill="#ED2939"/>
+    </svg>
+    <span class="lang-text">En</span>
+</div>>
             
             </div>
         </div>
@@ -229,10 +246,16 @@
         }
     });
 
-    // Update language switcher text and flag
-    const languageSwitcher = document.querySelector('.language-switcher');
-    const flagIcon = languageSwitcher.querySelector('.flag-icon');
-    const langText = languageSwitcher.querySelector('.lang-text');
+            // Update flag visibility
+const enFlag = document.querySelector('.en-flag');
+const frFlag = document.querySelector('.fr-flag');
+if (newLang === 'fr') {
+    enFlag.style.display = 'none';
+    frFlag.style.display = 'block';
+} else {
+    enFlag.style.display = 'block';
+    frFlag.style.display = 'none';
+}
     
     // Update download link
     const downloadLink = document.querySelector('.download-cv');
