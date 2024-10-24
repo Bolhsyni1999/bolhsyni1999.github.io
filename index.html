@@ -36,22 +36,8 @@
 }
 
 .flag-icon {
-    width: 24px;
-    height: 16px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
+    font-size: 1.5em;
     margin-right: 5px;
-}
-
-.en-flag {
-    background-image: url('https://cdn.gtranslate.net/flags/svg/en.svg');
-}
-
-.fr-flag {
-    background-image: url('https://cdn.gtranslate.net/flags/svg/fr.svg');
-    display: none;
 }
     </style>
 </head>
@@ -89,10 +75,9 @@
                 </div>
 
                 <div class="language-switcher" onclick="toggleLanguage()">
-    <span class="flag-icon en-flag"></span>
-    <span class="flag-icon fr-flag"></span>
-    <span class="lang-text">En</span>
-</div>
+                    <span class="flag-icon">🇬🇧</span>
+                    <span class="lang-text">En</span>
+                </div>
             
             </div>
         </div>
@@ -227,27 +212,11 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
      <script>
-         function toggleLanguage() {
+        function toggleLanguage() {
     const currentLang = document.documentElement.lang;
     const newLang = currentLang === 'en' ? 'fr' : 'en';
     document.documentElement.lang = newLang;
 
-    // Update flags visibility
-    const enFlag = document.querySelector('.en-flag');
-    const frFlag = document.querySelector('.fr-flag');
-    const langText = document.querySelector('.lang-text');
-    
-    if (newLang === 'fr') {
-        enFlag.style.display = 'none';
-        frFlag.style.display = 'inline-block';
-        langText.textContent = 'FR';
-    } else {
-        enFlag.style.display = 'inline-block';
-        frFlag.style.display = 'none';
-        langText.textContent = 'EN';
-    }
-
-    // Rest of your existing toggleLanguage code...
     const elements = document.querySelectorAll('[data-lang-en]');
     elements.forEach(el => {
         const content = el.getAttribute(`data-lang-${newLang}`);
@@ -260,12 +229,22 @@
         }
     });
 
+    // Update language switcher text and flag
+    const languageSwitcher = document.querySelector('.language-switcher');
+    const flagIcon = languageSwitcher.querySelector('.flag-icon');
+    const langText = languageSwitcher.querySelector('.lang-text');
+    
     // Update download link
     const downloadLink = document.querySelector('.download-cv');
+
     if (newLang === 'en') {
+        flagIcon.textContent = '🇬🇧';
+        langText.textContent = 'EN';
         downloadLink.textContent = 'Download CV Eng';
         downloadLink.href = 'https://drive.usercontent.google.com/u/0/uc?id=15MuFjwjroycNuBqwn1NGKLY3_3fXHwdq&export=download';
     } else {
+        flagIcon.textContent = '🇫🇷';
+        langText.textContent = 'FR';
         downloadLink.textContent = 'Télécharger CV Fr';
         downloadLink.href = 'https://drive.usercontent.google.com/u/0/uc?id=15DcTUXK2ixofZr1mQIL1f47zNL-UKN09&export=download';
     }
@@ -274,7 +253,6 @@
     document.getElementById('cf-name').placeholder = newLang === 'en' ? 'Your Name' : 'Votre nom';
     document.getElementById('cf-email').placeholder = newLang === 'en' ? 'Your Email' : 'Votre email';
     document.getElementById('cf-message').placeholder = newLang === 'en' ? 'Your Message' : 'Votre message';
-}
         }
 
         // Initialize language based on browser settings
